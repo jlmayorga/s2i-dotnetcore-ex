@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <Target Name="WhatAboutWarnings" AfterTargets="Build">
+    <Exec Command="echo hi" LogStandardErrorAsError="true" />
+  </Target>
+
 </Project>
